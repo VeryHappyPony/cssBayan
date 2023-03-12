@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: linear 2s;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 0 5px;
+}
+
+/* >>>>>>>>>>>>>>>>>>. */
+
+header {
+    max-width: 586px;
+    margin: 20px auto;
+}
+
+.main {
+    max-width: 568px;
+    margin: 20px auto;
+}
+
+.bayan {
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+
+.bayan_title {
+    display: block;
+
+    position: relative;
+    padding: 10px 15px;
+    color: brown;
+    cursor: pointer;
+}
+
+.bayan_title:after {    
+    content: "";
+    display: block;
+    appearance: none;
+
+    border-style: solid;
+    border-width: 8px 5px 0 5px;
+    border-color: brown transparent transparent transparent;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+.bayan_input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    
+    position: absolute;
+}
+
+.bayan_input:checked + .bayan_title:after {
+    border-style: solid;
+    border-width: 0 5px 8px 5px;
+    border-color: transparent transparent brown transparent;
+}
+
+.bayan_input:hover + .content {
+    display: block;
+}
+
+.bayan_input:checked + .content {
+    display: block;
+}
+
+.content {
+    display: none;
+}
+
+.bayan_pic {
+    cursor: pointer;
+    max-width: 568px;
+}
