@@ -44,7 +44,6 @@ header {
 .bayan_title:after {    
     content: "";
     display: block;
-    appearance: none;
 
     border-style: solid;
     border-width: 8px 5px 0 5px;
@@ -64,6 +63,8 @@ header {
 }
 
 .bayan_input:checked + .bayan_title:after {
+    
+
     border-style: solid;
     border-width: 0 5px 8px 5px;
     border-color: transparent transparent brown transparent;
